@@ -19,7 +19,7 @@ Para ejecutar este proyecto, necesitas tener instalado:
 * **JDK 21** o superior
 * **Maven** 3.9.5 o superior
 * **Glassfish Server 8.0.0**
-* Si no tienes el servidor instalado, puedes seguir las instrucciones detalladas en el archivo [readmeInstallGlassfishServer8.0.0.md](./readmeInstallGlassfishServer8.0.0.md).
+* Si no tienes el servidor instalado, puedes seguir las instrucciones detalladas en el archivo [readmeInstallGlassfishServer8.0.0.md](./src/main/java/beans/Documentation/readmeInstallGlassfishServer8.0.0.md).
 
 ## 📦 Ejecución del Proyecto
 
