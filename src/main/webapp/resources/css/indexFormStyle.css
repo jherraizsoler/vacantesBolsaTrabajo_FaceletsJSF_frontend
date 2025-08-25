@@ -1,0 +1,82 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 ago 2025, 11:10:14
+    Author     : herra
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+.form-card {
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+.form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #334155;
+}
+/* Estilos para los campos de entrada de texto */
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db; /* Color de borde predeterminado */
+    border-radius: 0.5rem; /* Esquinas redondeadas */
+    font-size: 1rem;
+    color: #334155;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilos cuando el campo está enfocado (focus) */
+.input:focus {
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+    border-color: #6366f1; /* Cambia el color del borde a azul/morado */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25); /* Agrega un brillo sutil */
+}
+
+/* Estilos para los botones */
+.button {
+    padding: 0.75rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #4f46e5; /* Color de fondo azul/morado */
+    border: none;
+    border-radius: 0.5rem; /* Esquinas redondeadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Estilos cuando el botón se pasa por encima (hover) */
+.button:hover {
+    background-color: #4338ca; /* Un color un poco más oscuro */
+    transform: translateY(-2px); /* Un pequeño efecto de elevación */
+}
+
+/* Estilos cuando el botón se hace clic (active) */
+.button:active {
+    background-color: #3730a3; /* Un color aún más oscuro */
+    transform: translateY(0); /* Vuelve a la posición original */
+}

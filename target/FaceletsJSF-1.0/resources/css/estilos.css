@@ -1,0 +1,217 @@
+ /* Hoja de estilos para un diseño limpio y profesional
+ * con un "sticky footer".
+ */
+
+/* 1. Estilos base y la clave del sticky footer */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', 'Roboto', sans-serif; /* Usamos ambas fuentes para compatibilidad */
+    background-color: #eef2f5; /* Un gris claro para el fondo */
+    color: #333; /* Texto principal oscuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    line-height: 1.6;
+}
+
+/* 2. Estructura de los contenedores */
+#wrapper {
+    flex: 1; /* El contenedor principal se expande para empujar el footer hacia abajo */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header-wrapper {
+    width: 100%;
+    background-color: #2c3e50; /* Azul oscuro profesional para el encabezado */
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para el encabezado */
+}
+
+#header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#page {
+    flex-grow: 1; /* Permite que el contenido ocupe todo el espacio restante */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 12px; /* Esquinas redondeadas suaves */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* Sombra para el contenedor principal */
+}
+
+/* 3. Estilos de componentes */
+#logo h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+#footer {
+    width: 100%;
+    background-color: #34495e; /* Un tono de azul más oscuro para el footer */
+    color: #bdc3c7; /* Texto gris claro para el footer */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Fuerza el footer a la parte inferior del contenedor flex */
+    font-size: 0.9em;
+}
+
+/* Estilos para el texto de derechos de autor en el footer */
+.footer-text {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* 4. Estilos para el formulario del contenido */
+.form-container {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1.5rem; /* Esquinas más redondeadas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada y suave */
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Espacio entre el label y el input */
+}
+
+.form-label {
+    display: block;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    min-width: 150px;
+}
+
+/* Estilo para todos los inputs, select y textarea */
+.form-input, .form-select, .form-textarea {
+    flex: 1; /* Permite que el input ocupe el espacio restante */
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    background-color: #f9fbfc;
+    color: #2d3748;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #4c51bf; /* Borde al enfocar */
+    box-shadow: 0 0 0 3px rgba(76, 81, 191, 0.2); /* Sombra al enfocar */
+}
+
+.form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22%234A5568%22%3E%3Cpath%20d%3D%22M9.293%2012.95l-3.376-3.376a.5.5%200%200%201%20.354-.854h6.752a.5.5%200%200%201%20.354.854L10.707%2012.95a.5.5%200%200%201-.707%200z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+/* Mensajes de error y mensajes globales */
+.error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: block;
+    font-style: italic;
+}
+
+.global-messages {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #e0e7ff;
+    color: #312e81;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #a5b4fc;
+}
+
+/* Estilo para los enlaces de "mostrar/ocultar" */
+.link-button {
+    color: #4c51bf;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.link-button:hover {
+    color: #3a3f91;
+}
+
+/* Estilo para el botón de envío */
+.submit-button {
+    width: 100%;
+    background-color: #4c51bf;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+}
+
+.submit-button:hover {
+    background-color: #3a3f91;
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 4px 10px rgba(76, 81, 191, 0.4);
+}
+
+/* Utilidades para flexbox y espacio */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* 5. Estilos responsive */
+@media (min-width: 768px) {
+    .form-field {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
