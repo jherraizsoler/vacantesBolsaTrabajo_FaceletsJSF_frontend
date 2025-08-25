@@ -1,8 +1,8 @@
 
 
 **Readme realizado por Jorge Herraiz Soler  este tiene todos los derechos**
-      
-       - Prohibido distribuir este readme de ninguna forma sin el 
+
+- Prohibido distribuir este readme de ninguna forma sin el 
          consentimiento  del autor
          
 
